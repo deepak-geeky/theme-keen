@@ -1,0 +1,12 @@
+.mapContainer{
+    height:'350px';
+    width:'auto'
+}
+
+.container{
+    border: 1px solid rgb(143, 119, 119);
+}
+
+.menu{
+    text-align: end;
+}

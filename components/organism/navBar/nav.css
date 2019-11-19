@@ -1,0 +1,11 @@
+.nav-container{
+    position: fixed; 
+    z-index: 2; 
+    top: 0; 
+    left:0;
+    padding-left: 10%;
+    background-color: #ccc; 
+    overflow-x: hidden; 
+    width: 100%;
+}
+
