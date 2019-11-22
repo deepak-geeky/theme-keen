@@ -8,7 +8,7 @@ function NavTopRight() {
             <li className='icon-item search'>
                 <IconButton iconUrl={'/navBar/Img-5.png'} height={30} width={30}/>
                 <div className='search-dropdown'>
-                    <input type='text' placeholder='Search'/>
+                    <input type='text' placeholder='Search' className='search-bar'/>
                 </div>
             </li>
             <li className='icon-item'>

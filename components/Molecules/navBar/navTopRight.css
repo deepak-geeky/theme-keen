@@ -24,10 +24,18 @@
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 2;
+  top:1;
+  left:1;
 }
 
 .search:hover .search-dropdown {
     display: block;
+}
+
+.search-bar{
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
 }

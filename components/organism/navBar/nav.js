@@ -12,16 +12,16 @@ import { NavBottomRight } from "../../Molecules/navBar/navBottomRight";
 const Nav = () => (
   <nav className="nav-container">
     <Row>
-      <Col xs="8">
+      <Col xs="9">
         <NavTopLeft />
       </Col>
-      <Col xs="4">
+      <Col>
         <NavTopRight />
       </Col>
     </Row>
     <hr />
     <Row>
-      <Col>
+      <Col xs='8'>
         <NavBottomLeft />
       </Col>
       <Col>

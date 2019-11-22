@@ -2,12 +2,12 @@ import React from "react";
 import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SideBar from "../components/organism/sideBar/sideBar";
-import Trend from "../components/Molecules/card/trend";
-import MapCard from "../components/Molecules/card/map";
 import Nav from "../components/organism/navBar/nav";
+import MainContent from "../components/organism/mainContent/mainContent";
+import './index.css'
 
 const Home = () => (
-  <div>
+  <div className='body'>
     <Head>
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
@@ -18,14 +18,10 @@ const Home = () => (
       ></link>
     </Head>
 
-    <div className="container">
-
-
-
+    <div className="main-container">
       <SideBar />
-      <Trend />
-      <MapCard />
       <Nav />
+      <MainContent />
 
     </div>
   </div>

@@ -32,7 +32,7 @@ export default class SplineArea extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer  width={'100%'} height={100}>
+      <ResponsiveContainer  width={'100%'} height={200}>
       <AreaChart
        
         data={data}
