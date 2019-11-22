@@ -3,7 +3,11 @@ import Link from "next/link";
 import HoverButton from "../../atoms/Buttons/hoverButton";
 import "./navTopLeft.css";
 
+const components =['Base','Custom','Extended']
+
+
 const NavTopLeft = () => (
+  
   <ul className="list">
     <li className="item">
       <Link href="/">
@@ -11,7 +15,15 @@ const NavTopLeft = () => (
       </Link>
     </li>
     <li>
-      <HoverButton label={"Components"} hoverColor={"#f5f7ff"} />
+      <div className='dropdown'>
+      <HoverButton label={"Components"} hoverColor={"#f5f7ff"} className='dropbtn' />
+        <div className='dropdown-content'>
+          {components.map( (e,index) =>{
+            //flaticon here
+            return <a key={index} href='#' className='menu-link'>{e}</a>
+          })}
+        </div>
+      </div>
     </li>
     <li>
       <HoverButton label={"Crud"} hoverColor={"#f5f7ff"} />

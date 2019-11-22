@@ -1,11 +1,12 @@
 .nav-container{
-    position: fixed; 
-    z-index: 2; 
+    position: fixed;
+    z-index: 1; 
     top: 0; 
     left:0;
-    padding-left: 10%;
-    background-color: #ccc; 
-    overflow-x: hidden; 
+    padding-left: 6rem;
+    padding-top: 2rem;
+    background-color: white;
     width: 100%;
+    border-bottom: rgb(160, 141, 141) solid 0.01rem;
 }
 
