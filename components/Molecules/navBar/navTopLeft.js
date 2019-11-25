@@ -20,7 +20,7 @@ const NavTopLeft = () => (
         <div className='dropdown-content'>
           {components.map( (e,index) =>{
             //flaticon here
-            return <a key={index} href='#' className='menu-link'>{e}</a>
+            return <a key={index} href='/other' className='menu-link'>{e}</a>
           })}
         </div>
       </div>

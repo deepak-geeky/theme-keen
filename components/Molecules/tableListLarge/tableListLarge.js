@@ -74,4 +74,3 @@ export default class TableListLarge extends React.Component {
     );
   }
 }
-          

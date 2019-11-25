@@ -7,5 +7,20 @@
     padding-top: 2rem;
     background-color: white;
     width: 100%;
+    display: none;
 }
 
+@media screen and (min-width:768px){
+    .nav-container{
+        position: fixed;
+        z-index: 3; 
+        top: 0; 
+        left:0;
+        padding-left: 6rem;
+        padding-top: 2rem;
+        background-color: white;
+        width: 100%;
+        display:block;
+    }
+    
+}

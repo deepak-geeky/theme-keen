@@ -3,7 +3,9 @@ import SquareIcon from "../../atoms/Icon/squareIcon";
 import "./sideBar.css";
 import HoverMenu from "../../atoms/Menu/hoverMenu";
 
-function SideBar(props) {
+const links = ['+Export','+Config','+Terminal']
+
+export const  SideBar=(props) => {
   return (
     <div className="sidebar-container">
       <div className='main-logo'>
@@ -16,11 +18,16 @@ function SideBar(props) {
               </div>
               Export
             </a>
-          <a href="#">
+          <a href="#" className='sidebar-dd'>
               <div>
                 <SquareIcon src={"/sidebar/bookmark.svg"} height={25} width={25} />
               </div>
               Config
+              <div className="sidebar-dd-content">
+    {links.map((e,index)=>{
+      return <a href='#' key={index}>{e}</a>
+    })}
+              </div>
             </a>
           <a href="#">
               <div>

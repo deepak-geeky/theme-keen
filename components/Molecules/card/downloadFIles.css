@@ -1,0 +1,19 @@
+.download-files-container{
+    background-color: white;
+    border-radius: 0.2rem;
+    padding:10%;
+    height:35rem;
+}
+
+.files-list{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.row-file{
+ vertical-align: center;
+}
+
+p{
+    padding-top: 1rem;
+}

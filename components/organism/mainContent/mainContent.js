@@ -4,23 +4,25 @@ import Trend from "../../Molecules/card/trend";
 import './mainContent.css'
 import MapCard from "../../Molecules/card/map";
 import TableListLarge from "../../Molecules/tableListLarge/tableListLarge";
+import DownloadFiles from "../../Molecules/card/downloadFiles";
 
 const MainContent = () => {
   return (
     <div className='main-content-container'>
       <Row>
-        <Col xs="4">
+        <Col >
           <Trend />
         </Col>
-        <Col xs="4">
+        <Col>
             <MapCard />
         </Col>
-        <Col xs="12">
+        <Col>
+            <DownloadFiles />
+        </Col>
+        <Col >
             <TableListLarge />
         </Col>
-        <Col xs="4">
-            Hell
-        </Col>
+       
       </Row>
     </div>
   );
