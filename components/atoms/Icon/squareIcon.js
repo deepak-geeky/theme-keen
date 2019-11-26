@@ -1,4 +1,5 @@
 import React from 'react'
+import './squareIcon.css'
 
 function SquareIcon(props) {
     return (

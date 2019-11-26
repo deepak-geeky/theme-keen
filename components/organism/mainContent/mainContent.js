@@ -3,12 +3,12 @@ import { Row, Col } from "reactstrap";
 import Trend from "../../Molecules/card/trend";
 import './mainContent.css'
 import MapCard from "../../Molecules/card/map";
-import TableListLarge from "../../Molecules/tableListLarge/tableListLarge";
+// import TableListLarge from "../../Molecules/tableListLarge/tableListLarge";
 import DownloadFiles from "../../Molecules/card/downloadFiles";
 
 const MainContent = () => {
   return (
-    <div className='main-content-container'>
+    <div className='container'>
       <Row>
         <Col >
           <Trend />
@@ -16,11 +16,11 @@ const MainContent = () => {
         <Col>
             <MapCard />
         </Col>
-        <Col>
+        <Col >
             <DownloadFiles />
         </Col>
         <Col >
-            <TableListLarge />
+            {/* <TableListLarge /> */}
         </Col>
        
       </Row>

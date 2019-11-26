@@ -1,0 +1,31 @@
+.page{
+    display: grid;
+    grid-template-columns: 9rem auto;
+    grid-template-rows: 9rem auto;
+    /* grid-gap:0.5rem; */
+    font-family: poppins;
+}
+
+.sidebar{
+    grid-area: 1/1/2/2;
+    background-color: #ccc;
+    align-self: stretch;
+    justify-self: stretch;
+    height: 100vh;
+    position: sticky;
+    z-index:5;
+    top:0;
+}
+
+.nav{
+    grid-area: 1/2/2/3;
+    position: sticky;
+    top:0;
+    z-index:4;
+    background-color: white;
+}
+
+.main-content{
+    grid-area: 2/2/3/3;
+    background-color: whitesmoke;
+}

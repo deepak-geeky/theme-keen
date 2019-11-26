@@ -1,7 +1,7 @@
 .container-left-bottom{
     display: inline-flex;
-    margin-left:4rem;
-    margin-bottom: 1rem;
+    /* margin-left:4rem;
+    margin-bottom: 1rem; */
 }
 
 .left-bottom-item{
@@ -10,5 +10,5 @@
 
 .first-item-bottom-left{
     border-right: black solid 0.01rem;
-    padding-right: 2rem;
+    padding: 0 2rem 0 2rem;
 }

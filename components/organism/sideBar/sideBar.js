@@ -1,7 +1,6 @@
 import React from "react";
 import SquareIcon from "../../atoms/Icon/squareIcon";
 import "./sideBar.css";
-import HoverMenu from "../../atoms/Menu/hoverMenu";
 
 const links = ['+Export','+Config','+Terminal']
 
