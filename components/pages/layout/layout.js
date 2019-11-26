@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import SideBar from '../sideBar/sideBar';
-import Nav from '../navBar/nav';
-import MainContent from '../mainContent/mainContent';
+import SideBar from '../../organism/sideBar/sideBar';
+import Nav from '../../organism/navBar/nav';
+import MainContent from '../../organism/mainContent/mainContent';
 import './layout.css'
 
 
