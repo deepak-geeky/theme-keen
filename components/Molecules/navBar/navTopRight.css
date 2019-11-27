@@ -4,14 +4,15 @@
 }
 
 .icon-item {
-  background-color: #ccc;
+  /* background-color: #ccc; */
   /* margin: 0.1rem; */
   margin-right: 0.5rem;
-  border-radius: 0.1rem;
+  padding:0.5rem;
 }
 
 .icon-item:hover {
   background-color: cyan;
+  border-radius:0.5rem;
 }
 
 .search {

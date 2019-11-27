@@ -1,14 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import SideBar from '../../organism/sideBar/sideBar';
-import Nav from '../../organism/navBar/nav';
-import MainContent from '../../organism/mainContent/mainContent';
+import SideBar from '../components/organism/sideBar/sideBar';
+import Nav from '../components/organism/navBar/nav';
+import MainContent from '../components/organism/mainContent/mainContent';
 import './layout.css'
+import Head from 'next/head'
 
 
-const Layout = () => {
+
+const Layout = ({children}) => {
     return (
         <div className='page'>
+            <Head>
+            <script src="https://kit.fontawesome.com/15373bc92f.js" crossorigin="anonymous"></script>   
+            </Head>
             <Helmet titleTemplate="%s | KeenThemes" defaultTitle='KeenThemes'/>
             {/* <SideBar className='sidebar'/>
             <Nav className='nav'/>
@@ -20,7 +25,7 @@ const Layout = () => {
                 <Nav/>
             </div>
             <div className="main-content">
-                <MainContent />
+                {children}
             </div>
         </div>
     )

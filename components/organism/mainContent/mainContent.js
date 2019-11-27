@@ -1,29 +1,21 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 import Trend from "../../Molecules/card/trend";
-import './mainContent.css'
+import "./mainContent.css";
 import MapCard from "../../Molecules/card/map";
 // import TableListLarge from "../../Molecules/tableListLarge/tableListLarge";
 import DownloadFiles from "../../Molecules/card/downloadFiles";
 
 const MainContent = () => {
   return (
-    <div className='container'>
-      <Row>
-        <Col >
-          <Trend />
-        </Col>
-        <Col>
-            <MapCard />
-        </Col>
-        <Col >
-            <DownloadFiles />
-        </Col>
-        <Col >
-            {/* <TableListLarge /> */}
-        </Col>
-       
-      </Row>
+    <div className="container">
+      <Trend />
+
+      <MapCard />
+
+      <DownloadFiles />
+
+      {/* <TableListLarge /> */}
     </div>
   );
 };

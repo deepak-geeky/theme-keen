@@ -1,9 +1,13 @@
 .page{
     display: grid;
-    grid-template-columns: 9rem auto;
-    grid-template-rows: 9rem auto;
+    grid-template-columns: 10rem auto;
+    grid-template-rows: 10rem auto;
     /* grid-gap:0.5rem; */
     font-family: poppins;
+}
+
+body{
+    margin:0px;
 }
 
 .sidebar{

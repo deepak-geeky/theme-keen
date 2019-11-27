@@ -13,13 +13,17 @@ export const  SideBar=(props) => {
       <div className='sidenav'>
             <a href="#">
               <div>
-                <SquareIcon src={"/sidebar/add-button.svg"} height={25} width={25} />
+                {/* <SquareIcon src={"/sidebar/add-button.svg"} height={25} width={25} />
+                 */}
+                 <i class="fas fa-align-center fa-lg"></i>
               </div>
               Export
             </a>
           <a href="#" className='sidebar-dd'>
               <div>
-                <SquareIcon src={"/sidebar/bookmark.svg"} height={25} width={25} />
+              <i class="fab fa-buffer fa-lg"></i>
+
+                {/* <SquareIcon src={"/sidebar/bookmark.svg"} height={25} width={25} /> */}
               </div>
               Config
               <div className="sidebar-dd-content">
@@ -30,25 +34,33 @@ export const  SideBar=(props) => {
             </a>
           <a href="#">
               <div>
-                <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} />
+              <i class="fas fa-bookmark fa-lg"></i>
+
+                {/* <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} /> */}
               </div>
               Report
             </a>
           <a href="#">
               <div>
-                <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} />
+              <i class="fas fa-terminal fa-lg"></i>
+
+                {/* <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} /> */}
               </div>
               Console
             </a>
           <a href="#">
               <div>
-                <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} />
+              <i class="fas fa-cogs fa-lg"></i>
+
+                {/* <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} /> */}
               </div>
               System
             </a>
           <a href="#">
               <div>
-                <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} />
+              <i class="fas fa-clipboard-list fa-lg"></i>
+
+                {/* <SquareIcon src={"/sidebar/folders.png"} height={25} width={25} /> */}
               </div>
               Logs
             </a>

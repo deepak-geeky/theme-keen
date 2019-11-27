@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/organism/layout/layout";
+import MainContent from "../components/organism/mainContent/mainContent";
 
 const Home = () => (
-  <Layout />
+  <MainContent />
 );
 
 export default Home;
