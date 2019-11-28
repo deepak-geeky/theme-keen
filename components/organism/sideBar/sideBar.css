@@ -1,62 +1,45 @@
-/* .sidebar-container {
-    height: 100%; 
-    width: 8rem;
-    position: fixed;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: #1f1c2e;
-    text-align: center;
-    display: none;
-  } */
-
-
- .sidenav a {
-    padding: 1rem;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #818181;
-    display: block;
-    text-align: center;
-  } 
-
-.sidenav{
-    padding-top: 5rem;
-  }
-
- .sidenav a:hover {
-    background-color: #1c1a29;
-}  
-
-
-
- @media screen and (min-width:760px){
-  .sidebar-container {
-    z-index: 1;
-    background-color: #1f1c2e;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9,1fr);
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
-  }
-  .sidenav{
-    grid-area: 2/1/9/2;
-  }
-
+.sidebar-main-container {
+  z-index: 1;
+  background-color: #1f1c2e;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
 }
 
-.sidebar-dd{
+.sidenav a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  text-align: center;
+}
+
+.sidenav {
+  padding-top: 5rem;
+}
+
+.main-logo{
+  padding-top: 2rem;
+}
+
+.sidenav a:hover {
+  background-color: #1c1a29;
+}
+
+.sidebar-dd {
   position: relative;
   display: block;
 }
 
-.sidebar-dd-content{
+.sidebar-dd-content {
   display: none;
   position: absolute;
-  top:0;
-  left:100%;
+  top: 0;
+  right: 100%;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -68,14 +51,33 @@
   text-decoration: none;
   display: block;
   font-size: 1rem;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar-dd-content a:hover {
   background-color: #ddd;
 }
 
-.sidebar-dd:hover .sidebar-dd-content{
-display:grid;
+.sidebar-dd:hover .sidebar-dd-content {
+  display: block;
+}
+
+@media screen and (min-width: 760px) {
+  .sidebar-main-container {
+    z-index: 1;
+    background-color: #1f1c2e;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+  }
+  .sidenav {
+    grid-area: 2/1/9/2;
+  }
+  .sidebar-dd-content{
+    left: 100%;
+  }
 }

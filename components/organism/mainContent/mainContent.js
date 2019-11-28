@@ -50,20 +50,20 @@ const MainContent = () => {
           <ProgressBars data={topLocationData} />
         </CardLayout>
       </div>
-
+    
       <div className="sales-stat">
         <CardLayout>
         <CardHeader headerText={"Sales Stats"} />
           <PercentAreaChart />
           <ProgressBars data={salesProgressData}/>
         </CardLayout>
-      </div>
+      </div> 
 
       <div className="table-bg">
         <CardLayout>
           <MainTable />
         </CardLayout>
-      </div>
+      </div> 
 
       <div className="user-progress">
         <CardLayout>
@@ -79,7 +79,7 @@ const MainContent = () => {
         <PercentAreaChart />
           <ProgressBars data={salesProgressData}/>
         </CardLayout>
-      </div>
+      </div> 
     </div>
   );
 };

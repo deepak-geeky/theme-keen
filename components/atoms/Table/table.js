@@ -1,13 +1,41 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { Table, Icon, Divider } from "antd";
+import Link from "next/link";
+
+const shuffle = str => {
+  return str
+    .split("")
+    .sort(function() {
+      return 0.5 - Math.random();
+    })
+    .join("");
+};
+
+const data = [];
+
+for (let i = 1; i <= 100; i++) {
+  data.push({
+    key: i,
+    name: `deepak${i}`,
+    age: `${i}`,
+    address: `Banglore${i}`
+  });
+}
 
 const columns = [
   {
     title: "Name",
     dataIndex: "name",
     key: "name",
-    render: text => <a>{text}</a>
+    render: (text, record) => (
+      <Link
+        href={`/users/user?userslug=${record.name}`}
+        as={`/users/${record.name}/${record.address}`}
+      >
+        <a>{text}</a>
+      </Link>
+    )
   },
   {
     title: "Age",
@@ -34,22 +62,8 @@ const columns = [
   }
 ];
 
-const data = [];
-for (let i = 1; i <= 100; i++) {
-  data.push({
-    key: i,
-    name: "John Brown",
-    age: `${i}2`,
-    address: `New York No. ${i} Lake Park`,
-    description: `My name is John Brown, I am ${i}2 years old, living in New York No. ${i} Lake Park.`
-  });
-}
-
-const expandedRowRender = record => <p>{record.description}</p>;
-const title = () => "Here is title";
 const showHeader = true;
 const footer = () => "Here is footer";
-const scroll = { y: 240 };
 const pagination = { position: "bottom" };
 
 class MainTable extends React.Component {
@@ -66,20 +80,17 @@ class MainTable extends React.Component {
     tableLayout: undefined
   };
 
-
   render() {
     const { state } = this;
     return (
-      <div>
-        <Table
-          {...this.state}
-          columns={columns.map(item => ({ ...item, ellipsis: state.ellipsis }))}
-          dataSource={state.hasData ? data : null}
-        />
-      </div>
+      <Table
+        {...this.state}
+        scroll={{ x: true }}
+        columns={columns.map(item => ({ ...item, ellipsis: state.ellipsis }))}
+        dataSource={state.hasData ? data : null}
+      />
     );
   }
 }
 
-
-export default  MainTable
+export default MainTable;

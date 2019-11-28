@@ -6,7 +6,7 @@ const links = ['+Export','+Config','+Terminal']
 
 export const  SideBar=(props) => {
   return (
-    <div className="sidebar-container">
+    <div className="sidebar-main-container">
       <div className='main-logo'>
         <SquareIcon src={"/main-logo.png"} height={40} width={59} />
       </div>

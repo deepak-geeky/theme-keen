@@ -14,6 +14,14 @@ class Theme extends App{
                 </Layout>
             )
         }
+
+        if(router.pathname.startsWith('/users/')){
+            return (
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
+            )
+        }
         return(
             <Layout>
                 <Component {...pageProps} />
