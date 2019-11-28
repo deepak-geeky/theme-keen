@@ -9,12 +9,17 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "antd": "^3.25.3",
+    "bootstrap": "^4.4.0",
     "canvasjs": "^1.8.1",
     "google-maps-react": "^2.0.2",
+    "install": "^0.13.0",
     "next": "9.1.3",
+    "npm": "^6.13.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-helmet": "^5.2.1",
+    "react-table": "^6.10.3",
     "reactstrap": "^8.1.1",
     "recharts": "^1.8.5"
   }

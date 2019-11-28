@@ -1,22 +1,12 @@
 import React from 'react'
+import './cardLayout.css'
 
 const CardLayout = (props) => {
 
-    const {header, dd, ddData, body, bodyData, footer, footerData} = props
+    // const {header, dd, ddData, body, bodyData, footer, footerData} = props
     return (
         <div class='card-container'>
-            {/* Head 
-            Body 
-            Foot */}
-            <div className="card-head">
-
-            </div>
-            <div className="card-body">
-
-            </div>
-            <div className="card-footer">
-
-            </div>
+            {props.children}
         </div>
     )
 }

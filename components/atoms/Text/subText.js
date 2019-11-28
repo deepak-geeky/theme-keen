@@ -9,7 +9,7 @@ function SubText(props) {
           .subText{
             font-size: 0.6rem;
             font-family: Poppins, Helvetica, sans-serif;
-            padding-left: 1em;
+            // padding-left: 1em;
             font-weight: 500;
             color: #48465b;
           }

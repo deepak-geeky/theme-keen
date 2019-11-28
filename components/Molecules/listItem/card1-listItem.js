@@ -1,39 +1,21 @@
 import React from "react";
-import SquareIcon from "../../atoms/Icon/squareIcon";
-import HeadingText from "../../atoms/Text/headingText";
-import SubText from "../../atoms/Text/subText";
+import IconHeaderSubHeader from "./iconHeaderSubHeader";
 import Price from "../../atoms/Text/price";
-import { Row, Col } from "reactstrap";
+import './card1.css'
 
-function ListItemCardOne(props) {
+
+function ListItemOne(props) {
+  const {url,text,subtext,price} = props
   return (
-    <div>
-      <Row>
-        <Col xs='2'>
-          <SquareIcon src={"/dashboard/python.png"} height={50} width={50} />
-        </Col>
-        <Col xs='6'>
-          <HeadingText text={"Python"} />
-          <SubText text={"A Programming Language"} />
-        </Col>
-        <Col xs='3'>
-          <Price text={"+11$"} />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs='2'>
-          <SquareIcon src={"/dashboard/python.png"} height={50} width={50} />
-        </Col>
-        <Col xs='6'>
-          <HeadingText text={"Python"} />
-          <SubText text={"A Programming Language"} />
-        </Col>
-        <Col xs='3'>
-          <Price text={"+11$"} />
-        </Col>
-      </Row>
+    <div className='list-1-container'>
+      <div className="left-icon-header">
+      <IconHeaderSubHeader url={url} text={text} subtext={subtext}/>
+      </div>
+      <div className="price-container">
+      <Price text={price}/>
+      </div>
     </div>
   );
 }
 
-export default ListItemCardOne;
+export default ListItemOne;

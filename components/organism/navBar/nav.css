@@ -28,13 +28,15 @@
   .navtopleft{
     justify-self: left;
     align-self: center;
+    grid-area: 1/1/2/2;
   }
   .navtopright{
-    justify-self: right;
+    justify-self: center;
     align-self: center;
+    grid-area: 1/2/2/3;
   }
   .navbottomright{
-    justify-self: right;
+    justify-self: center;
     align-self: center;
   }
   .navbottomleft{

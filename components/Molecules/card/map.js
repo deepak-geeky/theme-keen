@@ -9,7 +9,7 @@ function MapCard() {
     <div className='map-container'>
           <Row>
               <Col xs='10'> <HeadingText text={'Top Location'} /></Col>
-              <Col className='menu'> ... </Col>
+              <a><i class="fas fa-ellipsis-h fa-lg"></i></a>
             </Row>
         <hr/>
 

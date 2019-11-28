@@ -1,5 +1,6 @@
 .card-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1rem auto auto;
+    background-color: white;
+    border-radius: 0.2rem;
+    height: 100%;
+    padding:1rem;
 }

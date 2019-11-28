@@ -31,5 +31,7 @@ body{
 
 .main-content{
     grid-area: 2/2/3/3;
-    background-color: whitesmoke;
+    background-color: rgb(90, 88, 88);
+    padding: 0;
+    margin: 0;
 }
