@@ -30,7 +30,7 @@ const columns = [
     key: "name",
     render: (text, record) => (
       <Link
-        href={`/users/user?userslug=${record.name}`}
+        href="/users/[id]/[detail]"
         as={`/users/${record.name}/${record.address}`}
       >
         <a>{text}</a>
