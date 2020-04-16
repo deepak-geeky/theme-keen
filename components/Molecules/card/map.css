@@ -1,12 +1,18 @@
-.mapContainer{
-    height:'350px';
-    width:'auto'
+.map-container{
+    background-color: white;
+    border-radius: 0.2rem;
+    width: 20rem;
+    margin-left:5rem;
 }
 
-.container{
-    border: 1px solid rgb(143, 119, 119);
+.map-wrapper{
+    height:320px;
+    overflow: hidden;
+    position: relative;
+    top:0;
+    left: 0;
 }
 
-.menu{
-    text-align: end;
+.city-names{
+    padding-top: 10%;
 }

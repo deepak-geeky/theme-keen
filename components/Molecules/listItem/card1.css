@@ -1,0 +1,16 @@
+.list-1-container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 1fr;
+    margin: 1rem;
+}
+
+.left-icon-header{
+    grid-area: 1/1/2/8;
+    align-self: center;
+}
+
+.price-container{
+    grid-area: 1/9/2/11;
+    align-self: center;
+}

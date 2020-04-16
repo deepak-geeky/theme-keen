@@ -10,9 +10,10 @@ function HoverButton(props) {
                         
                     }
                     .buttonLink{
-                        padding: 0.5em 1em;
+                        padding: 1rem;
                         text-decoration: none;
                         color:#000;
+                        border-radius:1rem;
                     }
                     .buttonLink:hover {
                         background-color:#9be3de;

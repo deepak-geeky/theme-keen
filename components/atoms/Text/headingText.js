@@ -10,10 +10,10 @@ function HeadingText(props) {
             `
             .container-heading-text
             {
-                font-size:1rem;
+                // font-size:1rem;
                 font-family: Poppins,Helvetica,sans-serif;
-                padding-left:1em;
-                font-weight:500;
+                // padding-left:1em;
+                // font-weight:500;
                 color:#48465b
             }
             `
